@@ -23,6 +23,10 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    
+    - name: new task added at test
+      run: |
+        echo "new task added at test"
 
     # Runs a single command using the runners shell
     - name: 查看文件
