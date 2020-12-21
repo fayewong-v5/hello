@@ -33,3 +33,4 @@ jobs:
       run: |
         echo "add A1 at dev"
         echo "conflict from main to dev, edit at main"
+        echo "edit A1 at dev 333"
