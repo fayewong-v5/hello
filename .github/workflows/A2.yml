@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: A1
+name: A2
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -24,19 +24,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
-    - name: new task added at test
-      run: |
-        echo "new task added at test"
-        exit -1
-
-    # Runs a single command using the runners shell
-    - name: 查看文件
-      run: ls -l
-
     # Runs a set of commands using the runners shell
     - name: GITHUB envs
       run: |
-        echo "add A1 at dev"
-        echo "conflict from main to dev, edit at main"
-        echo "edit A1 at dev 333"
-        echo "edit A1 at forked main"
+        echo "add A2 at dev"
