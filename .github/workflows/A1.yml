@@ -39,3 +39,4 @@ jobs:
         echo "conflict from main to dev, edit at main"
         echo "edit A1 at dev 333"
         echo "edit A1 at forked main1"
+        中文
