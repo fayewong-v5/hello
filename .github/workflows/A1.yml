@@ -29,7 +29,7 @@ jobs:
       run: |
         echo "new task added at test"
         release_time=$(date "+%Y%m%d-%H%M%S")
-        ::set-output release_time=$release_time
+        echo "::set-output name=release_time::$release_time"
 
     # Runs a single command using the runners shell
     - name: 查看文件
