@@ -12,8 +12,6 @@ on:
     branches:
       - 'main'
 
-env:
-  ATOMCODE: ${${{ github.GITHUB_REPOSITORY }}#${{ github.GITHUB_ACTOR }}/}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -33,7 +31,9 @@ jobs:
         echo "new task added at test"
         release_time=$(date "+%Y%m%d-%H%M%S")
         echo "::set-output name=release_time::$release_time"
-        echo ${{ env.ATOMCODE }}
+        echo ${{ github.repository }}
+        echo ${{ github.repository_owner }}
+        echo ${{ github.repository_name }}
 
     # Runs a single command using the runners shell
     - name: 查看文件
