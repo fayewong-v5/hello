@@ -33,7 +33,7 @@ jobs:
         echo "::set-output name=release_time::$release_time"
         echo ${{ github.repository }}
         echo ${{ github.repository_owner }}
-        echo ${{ github.repository_name }}
+        echo ${${{ github.repository }}/${{ github.repository_owner }}/}
 
     # Runs a single command using the runners shell
     - name: 查看文件
