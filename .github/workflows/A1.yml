@@ -31,9 +31,9 @@ jobs:
         echo "new task added at test"
         release_time=$(date "+%Y%m%d-%H%M%S")
         echo "::set-output name=release_time::$release_time"
-        echo ${{ github.repository }}
-        echo ${{ github.repository_owner }}
-        echo ${${{ github.repository }}/${{ github.repository_owner }}/}
+        repository=${{ github.repository }}
+        repository_owner=${{ github.repository_owner }}
+        echo ${repository/repository_owner/}
 
     # Runs a single command using the runners shell
     - name: 查看文件
