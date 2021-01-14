@@ -25,8 +25,11 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: new task added at test
+      id: release_step
       run: |
         echo "new task added at test"
+        release_time=$(date "+%Y%m%d-%H%M%S")
+        echo "::set-output release_time=$release_time"
 
     # Runs a single command using the runners shell
     - name: 查看文件
@@ -39,4 +42,4 @@ jobs:
         echo "conflict from main to dev, edit at main"
         echo "edit A1 at dev 333"
         echo "edit A1 at forked main1"
-        中文
+        echo ${{ steps.release_step.ouputs.release_time}}
