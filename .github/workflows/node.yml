@@ -1,0 +1,8 @@
+on: [ push]
+
+steps:
+  # Configures the node version used on GitHub-hosted runners
+  - uses: actions/setup-node@v1
+    with:
+      # The Node.js version to configure
+      node-version: 12
