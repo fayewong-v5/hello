@@ -42,6 +42,11 @@ jobs:
         repository=${{ github.repository }}
         repository_owner=${{ github.repository_owner }}
         echo ${repository##*/}
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.3
+      with:
+        name: "11"
+        path: "test.txt"
 
     # Runs a single command using the runners shell
     - name: 查看文件
