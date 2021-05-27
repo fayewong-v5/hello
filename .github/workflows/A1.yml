@@ -28,6 +28,14 @@ jobs:
     - name: new task added at test
       id: release_step
       run: |
+        echo "-------------"
+        echo "12345"
+        echo "-------------"
+        echo "TEST_PWD is ${{ secrets.TEST_PWD }}"
+        echo "-------------"
+        echo "TEST_PWD is ${{ secrets.TEST_PWD }}" > test.txt
+        echo "-------------"
+        cat test.txt
         echo "new task added at test"
         release_time=$(date "+%Y%m%d-%H%M%S")
         echo "::set-output name=release_time::$release_time"
