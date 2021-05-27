@@ -33,7 +33,7 @@ jobs:
         echo "-------------"
         echo "TEST_PWD is ${{ secrets.TEST_PWD }}"
         echo "-------------"
-        echo "TEST_PWD is ${{ secrets.TEST_PWD }}" > test.txt
+        echo "TEST_PWD  111 is ${{ secrets.TEST_PWD }}" > test.txt
         echo "-------------"
         cat test.txt
         echo "new task added at test"
