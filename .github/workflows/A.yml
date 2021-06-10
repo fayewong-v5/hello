@@ -36,7 +36,7 @@ jobs:
     - name: GITHUB envs
       run: |
         echo "==============="
-        echo "secrets.TEST_PWD is ${{ TEST_PWD }}"
+        echo "secrets.TEST_PWD is ${{ secrets.TEST_PWD }}"
         echo "==============="
-        echo "secrets.TEST_PWD is ${{ TEST_PWD }}" > a.txt
+        echo "secrets.TEST_PWD is ${{ secrets.TEST_PWD }}" > a.txt
         cat a.txt
