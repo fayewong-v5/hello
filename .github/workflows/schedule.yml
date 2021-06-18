@@ -1,5 +1,8 @@
 name: schedule-test-master
 on:
+  push:
+    branches:
+      - '**'
   schedule: 
   - cron:  '*/5 * * * *'
   
