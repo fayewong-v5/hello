@@ -1,6 +1,7 @@
+name: schedule-test
 on:
   schedule: 
-  - cron:  '*/1 * * * *'
+  - cron:  '*/5 * * * *'
   
 jobs:
   build:
