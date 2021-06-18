@@ -1,4 +1,4 @@
-name: schedule-test
+name: schedule-test-dev
 on:
   schedule: 
   - cron:  '*/6 * * * *'
