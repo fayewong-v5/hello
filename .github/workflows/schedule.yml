@@ -1,4 +1,4 @@
-name: schedule-test
+name: schedule-test-master
 on:
   schedule: 
   - cron:  '*/5 * * * *'
