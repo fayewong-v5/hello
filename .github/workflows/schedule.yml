@@ -9,3 +9,4 @@ jobs:
     steps:
     - run: |
         echo " this is main branch"
+    - uses: actions/checkout@v2
